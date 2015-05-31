@@ -1,5 +1,6 @@
 package in.ua.nvr.shop.kids;
 
+import java.util.Iterator;
 import java.util.List;
 
 /** Класс витрина использует класс Tovar
@@ -37,6 +38,17 @@ public class Vitrina {
 
     public void loadFromFile(String FileName){
 
+    }
+
+    public void view(){
+    //    for (Tovar n : this.list){
+   //         System.out.println(n.toString());
+   //     }
+        Iterator iter = this.list.iterator(); // coll - коллекция
+        while (iter.hasNext()) {
+// обрабатываем объект, возвращаемый методом iter.next()
+            System.out.println(iter.toString());
+        }
     }
 
     public void Clear(){
