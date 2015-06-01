@@ -3,9 +3,9 @@ package in.ua.nvr.shop.kids;
 import java.util.Iterator;
 import java.util.List;
 
-/** Класс витрина использует класс Tovar
- * ИСПОЛЬЗУЕТ КОЛЛЕКЦИЮ ArrayList
- * Created by Олеся on 31.05.2015.
+/** РљР»Р°СЃСЃ РІРёС‚СЂРёРЅР° РёСЃРїРѕР»СЊР·СѓРµС‚ РєР»Р°СЃСЃ Tovar
+ * РРЎРџРћР›Р¬Р—РЈР•Рў РљРћР›Р›Р•РљР¦РР® ArrayList
+ * Created by РћР»РµСЃСЏ on 31.05.2015.
  */
 
 public class Vitrina {
@@ -40,16 +40,25 @@ public class Vitrina {
 
     }
 
-    public void view(){
+    public void view2(){
     //    for (Tovar n : this.list){
    //         System.out.println(n.toString());
    //     }
-        Iterator iter = this.list.iterator(); // coll - коллекция
+        Iterator iter = this.list.iterator(); // coll - РєРѕР»Р»РµРєС†РёСЏ
         while (iter.hasNext()) {
-// обрабатываем объект, возвращаемый методом iter.next()
+// РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РѕР±СЉРµРєС‚, РІРѕР·РІСЂР°С‰Р°РµРјС‹Р№ РјРµС‚РѕРґРѕРј iter.next()
             System.out.println(iter.toString());
         }
     }
+
+
+    ///////////////////////////  РїРѕС‡РµРјСѓ РЅРµ СЂР°Р±РѕС‚Р°РµС‚
+/*    public void view(){
+        for(Tovar n: this.list){
+            System.out.println(n.toString());
+        }
+    }
+*/
 
     public void Clear(){
         list.clear();
